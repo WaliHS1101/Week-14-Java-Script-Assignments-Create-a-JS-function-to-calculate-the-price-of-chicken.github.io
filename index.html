@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="Order()">Order</button>
+    <h1 id="Bill"></h1>
+
+    <script>
+        function Order(){
+            alert("Chicken Price 780");
+            let gram = prompt("How much chicken you want to order only in Gram");
+            if (gram == "") {
+                alert('Please enter the value');
+            }
+            else {
+                let Bill = 780 / 1000 * gram;
+                document.getElementById("Bill").innerHTML = `Total Bill is :${Bill}Rs`;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
